@@ -1,11 +1,11 @@
-name: r1s Lean版openwrt 
+name: zesion r1s Lean版openwrt 
 
 on:
   push:
     branches: 
       - master
     paths:
-      - '.github/workflows/r1s_lean.yml'
+      - '.github/workflows/zesion-r1s-new.yml'
   #schedule:
   #  - cron: '10 10 */4 * *' test
 
