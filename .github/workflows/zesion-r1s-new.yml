@@ -7,7 +7,7 @@ on:
     paths:
       - '.github/workflows/zesion-r1s-new.yml'
   #schedule:
-  #  - cron: '10 10 */4 * *' #test test
+  #  - cron: '10 10 */4 * *' #test
 
 jobs:
 
@@ -87,11 +87,13 @@ jobs:
           #删除无用功能
           sed -i '/app-adblock/s/^/#/' configs/config_h5
           sed -i '/app-watchcat/s/^/#/' configs/config_h5
-          sed -i '/app-upnp/s/^/#/' configs/config_h5
           sed -i '/app-openvpn/s/^/#/' configs/config_h5
           sed -i '/app-wifischedule/s/^/#/' configs/config_h5
           sed -i '/app-minidlna/s/^/#/' configs/config_h5
           sed -i '/app-qos/s/^/#/' configs/config_h5
+          sed -i '/app-frpc/s/^/#/' configs/config_h5
+          
+          
           cp configs/config_h5 friendlywrt/.config
           cd friendlywrt
           ./scripts/feeds update -a && ./scripts/feeds install -a
