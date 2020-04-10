@@ -5,7 +5,7 @@ on:
     branches: 
       - master
     paths:
-      - '.github/workflows/r1s_lean-v1.yml.yml'
+      - '.github/workflows/r1s_lean_01.yml'
   #schedule:
   #  - cron: '10 10 */2 * *' test test
 
